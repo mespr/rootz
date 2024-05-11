@@ -5,7 +5,7 @@ body {
     padding:0;
     margin:0;
     font-family:Garuda;
-    background-color:#d2cfca;
+    background-color:white;
 }
 #page {
     position:absolute;
@@ -17,29 +17,40 @@ body {
     right:0;
 }
 #header {
+    display:flex;
     flex:0 0;
-    text-align:center;
+    border-width:1px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #header #logo {
-    width:60%;
-    max-width:500px;
+    height:100px;
+    margin:16px;
+    overflow:hidden;
+}
+#header #header-links {
+    align-content: flex-end;
+    margin-right:16px;
 }
 #content {
     flex:1 1;
-    padding-left:10%;
-    padding-right:10%;
+    padding:16px;
 }
 .separator {
     background-color:#b71e42;
     height:4px;
 }
-#subheader {
-    width:60%;
-    margin-left:20%;
+H1 {
+    width:100%;
+    font-size:1.2em;
+    text-transform:uppercase;
+    margin-bottom:2px;
+    border-bottom:3px solid #b71e42;
 }
 #subtitle {
     font-size:1.2em;
     text-transform:uppercase;
+    margin-left:16px;
 }
 #footer {
     flex:0 0;
